@@ -1,129 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
-<title id="title">Millu's animated engineering domains</title>
-<desc id="desc">Animated premium dark teal infographic showing artificial intelligence, robotics, embedded systems and IoT, and UAV systems. Includes subtle glowing icons, moving signal paths, pulsing nodes, and animated card accents.</desc>
-<style>
-  .signal { stroke-dasharray: 6 14; animation: flow 7s linear infinite; }
-  .signal.reverse { animation-direction: reverse; animation-duration: 9s; }
-  .card-line { transform-box:fill-box; transform-origin:left center; animation: lineGrow 3.4s ease-in-out infinite; }
-  .card-line.d2 { animation-delay:.6s; } .card-line.d3 { animation-delay:1.2s; } .card-line.d4 { animation-delay:1.8s; }
-  .icon-glow { animation: iconGlow 3s ease-in-out infinite; }
-  .icon-glow.d2 { animation-delay:.5s; } .icon-glow.d3 { animation-delay:1s; } .icon-glow.d4 { animation-delay:1.5s; }
-  .node { transform-box:fill-box; transform-origin:center; animation: nodePulse 2.4s ease-in-out infinite; }
-  .node.d2 { animation-delay:.7s; } .node.d3 { animation-delay:1.4s; }
-  .orbit { transform-box:fill-box; transform-origin:center; animation: orbit 14s linear infinite; }
-  .spark { animation: blink 1.7s steps(2,end) infinite; }
-  @keyframes flow { to { stroke-dashoffset:-160; } }
-  @keyframes lineGrow { 0%,100% { transform:scaleX(.45); opacity:.5; } 50% { transform:scaleX(1); opacity:1; } }
-  @keyframes iconGlow { 0%,100% { opacity:.78; filter:drop-shadow(0 0 1px #72E0C1); } 50% { opacity:1; filter:drop-shadow(0 0 7px #72E0C1); } }
-  @keyframes nodePulse { 0%,100% { opacity:.45; transform:scale(.75); } 50% { opacity:1; transform:scale(1.5); } }
-  @keyframes orbit { to { transform:rotate(360deg); } }
-  @keyframes blink { 0%,45% { opacity:1; } 46%,100% { opacity:.2; } }
-  @media (prefers-reduced-motion:reduce) {
-    .signal,.card-line,.icon-glow,.node,.orbit,.spark { animation:none !important; }
-  }
-</style>
-<defs>
-  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#061512"/><stop offset=".55" stop-color="#0A2823"/><stop offset="1" stop-color="#103B33"/></linearGradient>
-  <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#153B32"/><stop offset="1" stop-color="#0A211D"/></linearGradient>
-  <linearGradient id="mint" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#B0F7DE"/><stop offset=".55" stop-color="#72E0C1"/><stop offset="1" stop-color="#24A98A"/></linearGradient>
-  <radialGradient id="halo"><stop stop-color="#52D5B0" stop-opacity=".18"/><stop offset="1" stop-color="#52D5B0" stop-opacity="0"/></radialGradient>
-  <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#8BE8CC" stroke-opacity=".045"/></pattern>
-  <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#020A08" flood-opacity=".4"/></filter>
-</defs>
-
-<rect width="1200" height="360" rx="24" fill="url(#bg)"/>
-<rect width="1200" height="360" rx="24" fill="url(#grid)"/>
-<circle cx="110" cy="30" r="180" fill="url(#halo)"/>
-<circle cx="1080" cy="340" r="210" fill="url(#halo)"/>
-
-<g font-family="Inter,Segoe UI,Arial,sans-serif">
-  <text x="52" y="43" fill="#8FEBD0" font-size="13" font-weight="700" letter-spacing="3.4">ENGINEERING DOMAINS</text>
-  <text x="1148" y="43" text-anchor="end" fill="#79A99B" font-size="10" font-weight="600" letter-spacing="1.8">01 — 04 / CORE INTERESTS</text>
-</g>
-
-<!-- Animated connector signal behind the four cards -->
-<path d="M177 78H1032" fill="none" stroke="#72E0C1" stroke-opacity=".16" stroke-width="1.5"/>
-<path class="signal" d="M177 78H1032" fill="none" stroke="url(#mint)" stroke-width="2" opacity=".9"/>
-<g fill="#72E0C1">
-  <circle class="node" cx="177" cy="78" r="3"/><circle class="node d2" cx="465" cy="78" r="3"/>
-  <circle class="node d3" cx="753" cy="78" r="3"/><circle class="node" cx="1032" cy="78" r="3"/>
-</g>
-
-<!-- Cards -->
-<g filter="url(#shadow)">
-  <rect x="42" y="98" width="270" height="218" rx="17" fill="url(#panel)" stroke="#4EBB9C" stroke-opacity=".5"/>
-  <rect x="330" y="98" width="270" height="218" rx="17" fill="url(#panel)" stroke="#4EBB9C" stroke-opacity=".5"/>
-  <rect x="618" y="98" width="270" height="218" rx="17" fill="url(#panel)" stroke="#4EBB9C" stroke-opacity=".5"/>
-  <rect x="906" y="98" width="252" height="218" rx="17" fill="url(#panel)" stroke="#4EBB9C" stroke-opacity=".5"/>
-</g>
-<g fill="url(#mint)">
-  <rect class="card-line" x="42" y="98" width="270" height="3" rx="1.5"/>
-  <rect class="card-line d2" x="330" y="98" width="270" height="3" rx="1.5"/>
-  <rect class="card-line d3" x="618" y="98" width="270" height="3" rx="1.5"/>
-  <rect class="card-line d4" x="906" y="98" width="252" height="3" rx="1.5"/>
-</g>
-
-<!-- AI / neural network icon -->
-<g class="icon-glow" transform="translate(177 171)" fill="none" stroke="url(#mint)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-  <path d="M-34 -17L-8 -31L21 -20L34 8L9 29L-23 22L-34 -17Z" stroke-opacity=".7"/>
-  <path d="M-34 -17L9 29M-8 -31L-23 22M-8 -31L34 8M21 -20L-23 22M-34 -17L21 -20"/>
-  <g fill="#0C2B24"><circle cx="-34" cy="-17" r="6"/><circle cx="-8" cy="-31" r="6"/><circle cx="21" cy="-20" r="6"/><circle cx="34" cy="8" r="6"/><circle cx="9" cy="29" r="6"/><circle cx="-23" cy="22" r="6"/></g>
-  <circle r="4.5" fill="#F3A66F" stroke="none"/>
-</g>
-
-<!-- Robotics / articulated arm -->
-<g class="icon-glow d2" transform="translate(465 171)" fill="none" stroke="url(#mint)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
-  <path d="M-40 35H38M-20 35V20L-2 4L20 16L34 -5"/>
-  <circle cx="-2" cy="4" r="9" fill="#0C2B24"/><circle cx="20" cy="16" r="8" fill="#0C2B24"/>
-  <path d="M34 -5L45 -22M34 -5L51 1M45 -22L56 -16M-20 20L-34 7" stroke-width="3"/>
-  <circle cx="-20" cy="20" r="5" fill="#72E0C1" stroke="none"/>
-</g>
-
-<!-- Embedded / IoT chip -->
-<g class="icon-glow d3" transform="translate(753 171)" fill="none" stroke="url(#mint)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-  <rect x="-28" y="-28" width="56" height="56" rx="9" fill="#0C2B24"/>
-  <rect x="-15" y="-15" width="30" height="30" rx="4"/>
-  <path d="M-15 -40V-28M0 -40V-28M15 -40V-28M-15 28V40M0 28V40M15 28V40M-40 -15H-28M-40 0H-28M-40 15H-28M28 -15H40M28 0H40M28 15H40"/>
-  <path d="M-7 0H7M0 -7V7" stroke="#F3A66F" stroke-width="3.5"/>
-</g>
-
-<!-- UAV / quadcopter with slowly rotating propellers -->
-<g class="icon-glow d4" transform="translate(1032 171)" fill="none" stroke="url(#mint)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
-  <path d="M0 0L-39 -27M0 0L39 -27M0 0L-39 27M0 0L39 27"/>
-  <path d="M-13 -9L0 -17L13 -9L13 9L0 17L-13 9Z" fill="#0C2B24"/>
-  <g fill="#0C2B24"><circle cx="-47" cy="-33" r="13"/><circle cx="47" cy="-33" r="13"/><circle cx="-47" cy="33" r="13"/><circle cx="47" cy="33" r="13"/></g>
-  <g stroke-width="2">
-    <g class="orbit"><path d="M-57 -33H-37M-47 -43V-23"/></g>
-    <g class="orbit"><path d="M37 -33H57M47 -43V-23"/></g>
-    <g class="orbit"><path d="M-57 33H-37M-47 23V43"/></g>
-    <g class="orbit"><path d="M37 33H57M47 23V43"/></g>
-  </g>
-  <circle r="4" fill="#F3A66F" stroke="none"/>
-</g>
-
-<!-- Labels -->
-<g font-family="Inter,Segoe UI,Arial,sans-serif" text-anchor="middle">
-  <g fill="#E7F7F1" font-size="16" font-weight="700" letter-spacing=".25">
-    <text x="177" y="246">ARTIFICIAL INTELLIGENCE</text>
-    <text x="465" y="246">ROBOTICS</text>
-    <text x="753" y="246">EMBEDDED &amp; IoT</text>
-    <text x="1032" y="246">UAV SYSTEMS</text>
-  </g>
-  <g fill="#9BBFB3" font-size="12.2" font-weight="500">
-    <text x="177" y="270">Perception · Learning · Vision</text>
-    <text x="465" y="270">Control · Sensors · Motion</text>
-    <text x="753" y="270">Firmware · Connectivity · Edge</text>
-    <text x="1032" y="270">Flight · Telemetry · Autonomy</text>
-  </g>
-  <g fill="#6FCFB0" font-size="9.5" font-weight="700" letter-spacing="1.6">
-    <text x="177" y="294">INTELLIGENCE</text><text x="465" y="294">MOTION</text>
-    <text x="753" y="294">CONNECTED SYSTEMS</text><text x="1032" y="294">AUTONOMY</text>
-  </g>
-</g>
-
-<path d="M52 337H1148" stroke="#72E0C1" stroke-opacity=".18"/>
-<circle cx="52" cy="337" r="3" fill="#72E0C1" class="spark"/>
-<circle cx="1148" cy="337" r="3" fill="#72E0C1" class="spark"/>
-<text x="600" y="350" text-anchor="middle" fill="#6F9E91" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="9" letter-spacing="2.1">FROM INTELLIGENT SOFTWARE TO REAL-WORLD SYSTEMS</text>
-<rect x="1" y="1" width="1198" height="358" rx="23" fill="none" stroke="#72E0C1" stroke-opacity=".3" stroke-width="2"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="t d">
+<title id="t">Engineering domains</title><desc id="d">Four colorful connected disciplines: artificial intelligence, robotics, embedded and IoT, and UAV systems.</desc>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0B1029"/><stop offset="1" stop-color="#102C43"/></linearGradient><linearGradient id="edge" x2="1"><stop stop-color="#48E5FF"/><stop offset=".5" stop-color="#A78BFA"/><stop offset="1" stop-color="#FF8A72"/></linearGradient><filter id="g"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<style>text{font-family:Inter,Segoe UI,Arial,sans-serif}.ey{font-size:13px;letter-spacing:3px;font-weight:800;fill:#8BEAF5}.h{font-size:23px;font-weight:800;fill:#F2F4FF}.p{font-size:13px;fill:#AAB8DD}.n{font-size:11px;letter-spacing:2px;fill:#7D91C1}.card{fill:#151D3B;stroke:#384A78;stroke-width:1.2}.line{fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}.signal{stroke-dasharray:5 12;animation:dash 5s linear infinite}.pulse{animation:pulse 2s ease-in-out infinite}@keyframes dash{to{stroke-dashoffset:-136}}@keyframes pulse{50%{opacity:.45;filter:drop-shadow(0 0 7px currentColor)}}@media(prefers-reduced-motion:reduce){.signal,.pulse{animation:none}}</style></defs>
+<rect width="1200" height="360" rx="25" fill="url(#bg)"/>
+<circle cx="600" cy="180" r="160" fill="#7C3AED" opacity=".07"/>
+<text x="42" y="42" class="ey">THE SYSTEMS I’M EXPLORING</text><text x="1158" y="42" class="n" text-anchor="end">FOUR CONNECTED DISCIPLINES</text>
+<path d="M170 190H1030" stroke="url(#edge)" stroke-width="2" opacity=".65" class="signal"/>
+<!-- AI -->
+<g transform="translate(32 76)"><rect class="card" width="270" height="220" rx="18"/><rect width="270" height="5" rx="2" fill="#48E5FF"/>
+<g transform="translate(135 77)" stroke="#48E5FF" fill="none" stroke-width="2.5" filter="url(#g)"><path d="M-35-18 0-37 35-18 35 20 0 39-35 20Z"/><path d="m-35-18 35 20 35-20M0 2v37M-35 20 0 2l35 18"/><circle r="6" fill="#48E5FF" class="pulse"/><circle cx="-35" cy="-18" r="4" fill="#48E5FF"/><circle cx="35" cy="-18" r="4" fill="#48E5FF"/></g>
+<text x="24" y="151" class="h">Artificial Intelligence</text><text x="24" y="178" class="p">Machine learning · Computer vision</text><text x="24" y="201" class="n">01 / PERCEPTION &amp; LEARNING</text></g>
+<!-- robotics -->
+<g transform="translate(319 76)"><rect class="card" width="270" height="220" rx="18"/><rect width="270" height="5" rx="2" fill="#A78BFA"/>
+<g transform="translate(135 77)" stroke="#A78BFA" fill="none" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" filter="url(#g)"><path d="M-38 30h76M-20 30-8 4 17-12 31-34"/><circle cx="-8" cy="4" r="9" fill="#151D3B"/><circle cx="17" cy="-12" r="8" fill="#151D3B"/><path d="m31-34 12-3m-12 3 5-12m-5 12-10-8"/></g>
+<text x="24" y="151" class="h">Robotics</text><text x="24" y="178" class="p">Motion · Control · Automation</text><text x="24" y="201" class="n">02 / MACHINES IN MOTION</text></g>
+<!-- embedded -->
+<g transform="translate(606 76)"><rect class="card" width="270" height="220" rx="18"/><rect width="270" height="5" rx="2" fill="#B7F36B"/>
+<g transform="translate(135 77)" stroke="#B7F36B" fill="none" stroke-width="2.5" filter="url(#g)"><rect x="-34" y="-34" width="68" height="68" rx="10"/><rect x="-13" y="-13" width="26" height="26" rx="4"/><path d="M-20-45v11m20-11v11m20-11v11M-20 34v11m20-11v11m20-11v11M-45-20h11m-11 20h11m-11 20h11M34-20h11m-11 20h11m-11 20h11"/></g>
+<text x="24" y="151" class="h">Embedded &amp; IoT</text><text x="24" y="178" class="p">Sensors · Firmware · Connectivity</text><text x="24" y="201" class="n">03 / SOFTWARE MEETS HARDWARE</text></g>
+<!-- UAV -->
+<g transform="translate(893 76)"><rect class="card" width="275" height="220" rx="18"/><rect width="275" height="5" rx="2" fill="#FF8A72"/>
+<g transform="translate(137 77)" stroke="#FF8A72" fill="none" stroke-width="2.5" filter="url(#g)"><path d="M0 0-40-24M0 0 40-24M0 0-40 24M0 0 40 24"/><circle cx="-44" cy="-27" r="13"/><circle cx="44" cy="-27" r="13"/><circle cx="-44" cy="27" r="13"/><circle cx="44" cy="27" r="13"/><rect x="-12" y="-11" width="24" height="22" rx="6" fill="#151D3B"/><path d="M-7 11v9h14v-9"/></g>
+<text x="24" y="151" class="h">UAV Systems</text><text x="24" y="178" class="p">Flight control · Telemetry · Autonomy</text><text x="24" y="201" class="n">04 / AUTONOMOUS FLIGHT</text></g>
+<g fill="#48E5FF"><circle cx="302" cy="190" r="4" class="pulse"/><circle cx="589" cy="190" r="4" class="pulse"/><circle cx="876" cy="190" r="4" class="pulse"/></g>
 </svg>

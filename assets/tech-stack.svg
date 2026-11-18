@@ -1,198 +1,44 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="510" viewBox="0 0 1200 510" role="img" aria-labelledby="title desc">
-<title id="title">Millu's technology stack</title>
-<desc id="desc">A premium animated technology toolkit covering AI and data, software and backend, and hardware and engineering.</desc>
-<defs>
-  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-    <stop stop-color="#061512"/><stop offset=".55" stop-color="#0A2823"/><stop offset="1" stop-color="#102F2A"/>
-  </linearGradient>
-  <linearGradient id="mint" x1="0" y1="0" x2="1" y2="0">
-    <stop stop-color="#A1FFE1"/><stop offset=".5" stop-color="#52D9B4"/><stop offset="1" stop-color="#24A98A"/>
-  </linearGradient>
-  <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
-    <stop stop-color="#123B33" stop-opacity=".94"/><stop offset="1" stop-color="#0A211D" stop-opacity=".96"/>
-  </linearGradient>
-  <linearGradient id="sweep" x1="0" y1="0" x2="1" y2="0">
-    <stop stop-color="#6FFFD0" stop-opacity="0"/><stop offset=".5" stop-color="#6FFFD0" stop-opacity=".18"/><stop offset="1" stop-color="#6FFFD0" stop-opacity="0"/>
-  </linearGradient>
-  <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
-    <feGaussianBlur stdDeviation="3" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-  </filter>
-  <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
-    <feGaussianBlur stdDeviation="13"/>
-  </filter>
-  <style>
-    text{font-family:Inter,Segoe UI,Arial,sans-serif}
-    .eyebrow{font-size:14px;font-weight:800;letter-spacing:3.2px;fill:#79E8C6}
-    .sub{font-size:13px;fill:#9ABDB3;letter-spacing:.25px}
-    .group{font-size:12px;font-weight:800;letter-spacing:1.7px;fill:#7FE7C7}
-    .name{font-size:15px;font-weight:650;fill:#E7F8F1}
-    .hint{font-size:10px;letter-spacing:1.4px;fill:#719B8F}
-    .panel{fill:url(#panel);stroke:#286A5B;stroke-width:1.2}
-    .tile{fill:#0D3029;stroke:#286B5B;stroke-width:1}
-    .icon-bg{fill:#17483D;stroke:#4BBA99;stroke-opacity:.55;stroke-width:1}
-    .icon-line{fill:none;stroke:#9BFFE0;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-    .icon-fill{fill:#82EAC8}
-    .pulse{animation:pulse 2.8s ease-in-out infinite}
-    .float{animation:float 4.5s ease-in-out infinite}
-    .scan{animation:scan 8s ease-in-out infinite}
-    .spark{animation:spark 2.2s ease-in-out infinite}
-    .spin{transform-box:fill-box;transform-origin:center;animation:spin 9s linear infinite}
-    @keyframes pulse{0%,100%{opacity:.55}50%{opacity:1}}
-    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-2px)}}
-    @keyframes scan{0%{transform:translateX(-1250px)}55%,100%{transform:translateX(1250px)}}
-    @keyframes spark{0%,100%{opacity:.25}50%{opacity:1}}
-    @keyframes spin{to{transform:rotate(360deg)}}
-    @media(prefers-reduced-motion:reduce){.pulse,.float,.scan,.spark,.spin{animation:none}}
-  </style>
-</defs>
-
-<rect width="1200" height="510" rx="26" fill="url(#bg)"/>
-<circle cx="1090" cy="65" r="120" fill="#28B894" opacity=".08" filter="url(#soft)"/>
-<circle cx="80" cy="460" r="130" fill="#28B894" opacity=".06" filter="url(#soft)"/>
-<g opacity=".12" stroke="#62DDB9" fill="none">
-  <path d="M0 92H1200M0 490H1200M28 0V510M1172 0V510"/>
-  <path d="M20 112h22m-11-11v22M1158 112h22m-11-11v22M20 474h22m-11-11v22M1158 474h22m-11-11v22"/>
-</g>
-
-<g>
-  <text x="48" y="54" class="eyebrow">ENGINEERING TOOLKIT <tspan fill="#D8FFF2">/</tspan> 2026</text>
-  <text x="48" y="82" class="sub">Technologies I build with, experiment on, and keep sharpening.</text>
-  <g transform="translate(1000 42)">
-    <circle cx="0" cy="0" r="4" fill="#68F2BE" class="pulse" filter="url(#glow)"/>
-    <text x="13" y="4" class="hint">SYSTEMS ONLINE</text>
-  </g>
-</g>
-
-<!-- Category panels -->
-<g>
-  <rect class="panel" x="38" y="112" width="1124" height="108" rx="17"/>
-  <rect class="panel" x="38" y="235" width="1124" height="108" rx="17"/>
-  <rect class="panel" x="38" y="358" width="1124" height="108" rx="17"/>
-  <path d="M55 113h180" stroke="url(#mint)" stroke-width="3" stroke-linecap="round"/>
-  <path d="M55 236h180" stroke="url(#mint)" stroke-width="3" stroke-linecap="round"/>
-  <path d="M55 359h180" stroke="url(#mint)" stroke-width="3" stroke-linecap="round"/>
-</g>
-<g class="scan"><rect x="0" y="112" width="210" height="354" fill="url(#sweep)"/></g>
-
-<!-- category labels -->
-<g>
-  <text x="58" y="140" class="group">01 / AI &amp; DATA</text>
-  <text x="58" y="263" class="group">02 / SOFTWARE &amp; BACKEND</text>
-  <text x="58" y="386" class="group">03 / HARDWARE &amp; ENGINEERING</text>
-  <text x="58" y="202" class="hint">INTELLIGENCE</text>
-  <text x="58" y="325" class="hint">APPLICATIONS</text>
-  <text x="58" y="448" class="hint">REAL-WORLD SYSTEMS</text>
-</g>
-
-<!-- reusable-looking icon tiles; each has an original mini mark -->
-<!-- AI & DATA -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="510" viewBox="0 0 1200 510" role="img" aria-labelledby="t d">
+<title id="t">Millu's colorful technology toolkit</title><desc id="d">A coordinated Aurora Circuit technology board with colorful custom icons for AI, software, data, embedded systems and UAV engineering.</desc>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0B1029"/><stop offset=".55" stop-color="#15183B"/><stop offset="1" stop-color="#0B3040"/></linearGradient><linearGradient id="line" x2="1"><stop stop-color="#48E5FF"/><stop offset=".48" stop-color="#A78BFA"/><stop offset="1" stop-color="#FF8A72"/></linearGradient><filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<style>
+text{font-family:Inter,Segoe UI,Arial,sans-serif}.ey{font-size:14px;letter-spacing:3px;font-weight:800;fill:#8BEAF5}.sub{font-size:13px;fill:#AAB8DD}.cat{font-size:12px;letter-spacing:2px;font-weight:800;fill:#D8DDF7}.nm{font-size:15px;font-weight:700;fill:#F2F4FF}.meta{font-size:9px;letter-spacing:1.4px;fill:#899AC6}.panel{fill:#111A36;stroke:#384A78;stroke-width:1.2}.tile{fill:#182344;stroke:#394C7B;stroke-width:1}.ico{fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.a{stroke:#48E5FF}.v{stroke:#B49AFF}.c{stroke:#FF927B}.l{stroke:#B7F36B}.y{stroke:#FFD166}.pulse{animation:pulse 2.5s ease-in-out infinite}.float{animation:float 4s ease-in-out infinite}.scan{animation:scan 8s ease-in-out infinite}.spin{transform-box:fill-box;transform-origin:center;animation:spin 8s linear infinite}@keyframes pulse{50%{opacity:.45;filter:drop-shadow(0 0 7px currentColor)}}@keyframes float{50%{transform:translateY(-2px)}}@keyframes scan{0%{transform:translateX(-1250px)}55%,100%{transform:translateX(1250px)}}@keyframes spin{to{transform:rotate(360deg)}}@media(prefers-reduced-motion:reduce){.pulse,.float,.scan,.spin{animation:none}}
+</style></defs>
+<rect width="1200" height="510" rx="25" fill="url(#bg)"/>
+<circle cx="1080" cy="40" r="145" fill="#8B5CF6" opacity=".08"/><circle cx="90" cy="450" r="130" fill="#06B6D4" opacity=".07"/>
+<text x="42" y="48" class="ey">TOOLKIT / SELECTED TECHNOLOGIES</text><text x="42" y="75" class="sub">A growing set of tools for building across digital and physical systems.</text>
+<g transform="translate(1010 42)"><circle r="4" fill="#B7F36B" class="pulse" filter="url(#glow)"/><text x="14" y="4" class="meta">ALWAYS LEARNING</text></g>
+<rect class="panel" x="32" y="100" width="1136" height="112" rx="16"/><rect class="panel" x="32" y="222" width="1136" height="112" rx="16"/><rect class="panel" x="32" y="344" width="1136" height="112" rx="16"/>
+<path d="M50 101h150" stroke="#48E5FF" stroke-width="3"/><path d="M50 223h150" stroke="#B49AFF" stroke-width="3"/><path d="M50 345h150" stroke="#FF927B" stroke-width="3"/>
+<g class="scan"><rect width="170" height="356" y="100" fill="url(#line)" opacity=".09"/></g>
+<text x="52" y="131" class="cat">01 / AI &amp; DATA</text><text x="52" y="193" class="meta">INTELLIGENCE</text>
+<text x="52" y="253" class="cat">02 / SOFTWARE</text><text x="52" y="315" class="meta">APPLICATIONS</text>
+<text x="52" y="375" class="cat">03 / HARDWARE</text><text x="52" y="437" class="meta">REAL-WORLD SYSTEMS</text>
+<!-- tile macro hand authored -->
 <g class="float">
-  <g transform="translate(282 127)">
-    <rect class="tile" width="130" height="78" rx="12"/><rect class="icon-bg" x="12" y="13" width="34" height="34" rx="9"/>
-    <path class="icon-line" d="M21 31c-5-5 1-11 8-8 5-4 12 1 8 7 4 6-2 11-8 8-6 4-12-1-8-7Z"/>
-    <path class="icon-line" d="M27 22v17m-5-9h14"/>
-    <text class="name" x="55" y="35">Python</text><text class="hint" x="55" y="52">LANGUAGE</text>
-  </g>
-  <g transform="translate(424 127)">
-    <rect class="tile" width="130" height="78" rx="12"/><rect class="icon-bg" x="12" y="13" width="34" height="34" rx="9"/>
-    <path class="icon-line" d="M29 18 19 36h8l-2 8 11-18h-8l1-8Z"/>
-    <text class="name" x="55" y="35">PyTorch</text><text class="hint" x="55" y="52">DEEP LEARNING</text>
-  </g>
-  <g transform="translate(566 127)">
-    <rect class="tile" width="130" height="78" rx="12"/><rect class="icon-bg" x="12" y="13" width="34" height="34" rx="9"/>
-    <circle class="icon-line" cx="29" cy="30" r="10"/><circle class="icon-line" cx="29" cy="30" r="4"/><path class="icon-line" d="M29 16v4m0 20v4m-13-14h4m18 0h4"/>
-    <text class="name" x="55" y="35">OpenCV</text><text class="hint" x="55" y="52">COMPUTER VISION</text>
-  </g>
-  <g transform="translate(708 127)">
-    <rect class="tile" width="130" height="78" rx="12"/><rect class="icon-bg" x="12" y="13" width="34" height="34" rx="9"/>
-    <path class="icon-line" d="M19 22h20M19 29h20M19 36h20"/><circle class="icon-fill" cx="23" cy="22" r="2"/><circle class="icon-fill" cx="34" cy="29" r="2"/><circle class="icon-fill" cx="27" cy="36" r="2"/>
-    <text class="name" x="55" y="35">NumPy</text><text class="hint" x="55" y="52">NUMERICAL</text>
-  </g>
-  <g transform="translate(850 127)">
-    <rect class="tile" width="130" height="78" rx="12"/><rect class="icon-bg" x="12" y="13" width="34" height="34" rx="9"/>
-    <path class="icon-line" d="M19 38V22h20v16M23 34l4-5 4 3 5-7"/><circle class="icon-fill" cx="36" cy="25" r="2"/>
-    <text class="name" x="55" y="35">Pandas</text><text class="hint" x="55" y="52">DATA ANALYSIS</text>
-  </g>
-  <g transform="translate(992 127)">
-    <rect class="tile" width="150" height="78" rx="12"/><rect class="icon-bg" x="12" y="13" width="34" height="34" rx="9"/>
-    <path class="icon-line" d="M19 38V20h20v18M23 34l4-5 4 2 5-7"/><path class="icon-line" d="M24 24h10"/>
-    <text class="name" x="55" y="35">ML</text><text class="hint" x="55" y="52">MODELS &amp; AI</text>
-  </g>
+<g transform="translate(245 117)"><rect class="tile" width="135" height="78" rx="12"/><rect x="12" y="15" width="38" height="38" rx="10" fill="#123D55"/><path class="ico a" d="M20 34q-5-9 5-12 8-7 14 2 9 8 0 16-8 8-16 0Z M31 24v18m-8-9h16"/><text class="nm" x="60" y="36">Python</text><text class="meta" x="60" y="51">LANGUAGE</text></g>
+<g transform="translate(390 117)"><rect class="tile" width="135" height="78" rx="12"/><rect x="12" y="15" width="38" height="38" rx="10" fill="#302653"/><path class="ico v" d="m31 20-11 17h10l-2 10 13-19H31Z"/><text class="nm" x="60" y="36">PyTorch</text><text class="meta" x="60" y="51">DEEP LEARNING</text></g>
+<g transform="translate(535 117)"><rect class="tile" width="135" height="78" rx="12"/><rect x="12" y="15" width="38" height="38" rx="10" fill="#3C2639"/><circle class="ico c" cx="31" cy="34" r="12"/><circle class="ico c" cx="31" cy="34" r="5"/><path class="ico c" d="M31 17v5m0 24v5m-17-17h5m24 0h5"/><text class="nm" x="60" y="36">OpenCV</text><text class="meta" x="60" y="51">VISION</text></g>
+<g transform="translate(680 117)"><rect class="tile" width="135" height="78" rx="12"/><rect x="12" y="15" width="38" height="38" rx="10" fill="#263D35"/><path class="ico l" d="M20 24h22M20 33h22M20 42h22"/><circle cx="24" cy="24" r="2" fill="#B7F36B"/><circle cx="36" cy="33" r="2" fill="#B7F36B"/><text class="nm" x="60" y="36">NumPy</text><text class="meta" x="60" y="51">NUMERICAL</text></g>
+<g transform="translate(825 117)"><rect class="tile" width="135" height="78" rx="12"/><rect x="12" y="15" width="38" height="38" rx="10" fill="#3C3525"/><path class="ico y" d="M20 44V23h22v21M23 39l6-7 5 3 5-8"/><text class="nm" x="60" y="36">Pandas</text><text class="meta" x="60" y="51">DATA</text></g>
+<g transform="translate(970 117)"><rect class="tile" width="175" height="78" rx="12"/><rect x="12" y="15" width="38" height="38" rx="10" fill="#302653"/><path class="ico v" d="M21 42V25l10-6 10 6v17l-10 6Z M21 25l10 6 10-6m-10 6v17"/><text class="nm" x="60" y="36">Machine Learning</text><text class="meta" x="60" y="51">MODELS &amp; AI</text></g>
 </g>
-
-<!-- SOFTWARE & BACKEND -->
 <g class="float">
-  <g transform="translate(282 250)">
-    <rect class="tile" width="130" height="78" rx="12"/><rect class="icon-bg" x="12" y="13" width="34" height="34" rx="9"/>
-    <path class="icon-line" d="m25 21-7 9 7 9m8-18 7 9-7 9"/>
-    <text class="name" x="55" y="35">TypeScript</text><text class="hint" x="55" y="52">TYPED JS</text>
-  </g>
-  <g transform="translate(424 250)">
-    <rect class="tile" width="130" height="78" rx="12"/><rect class="icon-bg" x="12" y="13" width="34" height="34" rx="9"/>
-    <path class="icon-line" d="M29 18 19 30l10 12 10-12-10-12Z"/><circle class="icon-fill" cx="29" cy="30" r="3"/>
-    <text class="name" x="55" y="35">React / Next</text><text class="hint" x="55" y="52">FRONTEND</text>
-  </g>
-  <g transform="translate(566 250)">
-    <rect class="tile" width="130" height="78" rx="12"/><rect class="icon-bg" x="12" y="13" width="34" height="34" rx="9"/>
-    <path class="icon-line" d="M20 22h18v16H20zM24 18v4m10-4v4m-10 20v-4m10 4v-4"/>
-    <text class="name" x="55" y="35">Node.js</text><text class="hint" x="55" y="52">RUNTIME</text>
-  </g>
-  <g transform="translate(708 250)">
-    <rect class="tile" width="130" height="78" rx="12"/><rect class="icon-bg" x="12" y="13" width="34" height="34" rx="9"/>
-    <path class="icon-line" d="M19 22h20v16H19zM24 27h10m-10 5h7"/><path class="icon-line" d="m24 18-4 4m14-4 4 4"/>
-    <text class="name" x="55" y="35">FastAPI</text><text class="hint" x="55" y="52">API SERVICES</text>
-  </g>
-  <g transform="translate(850 250)">
-    <rect class="tile" width="130" height="78" rx="12"/><rect class="icon-bg" x="12" y="13" width="34" height="34" rx="9"/>
-    <path class="icon-line" d="M19 23q10-9 20 0v14q-10 9-20 0Z"/><path class="icon-line" d="M19 27q10 8 20 0M19 33q10 8 20 0"/>
-    <text class="name" x="55" y="35">MongoDB</text><text class="hint" x="55" y="52">DATABASE</text>
-  </g>
-  <g transform="translate(992 250)">
-    <rect class="tile" width="150" height="78" rx="12"/><rect class="icon-bg" x="12" y="13" width="34" height="34" rx="9"/>
-    <circle class="icon-line" cx="29" cy="30" r="11"/><path class="icon-line" d="m23 30 4 4 8-9"/>
-    <text class="name" x="55" y="35">Git</text><text class="hint" x="55" y="52">VERSION CONTROL</text>
-  </g>
+<g transform="translate(245 239)"><rect class="tile" width="135" height="78" rx="12"/><rect x="12" y="15" width="38" height="38" rx="10" fill="#123D55"/><path class="ico a" d="m27 23-9 11 9 10m9-21 9 11-9 10"/><text class="nm" x="60" y="36">TypeScript</text><text class="meta" x="60" y="51">TYPED JS</text></g>
+<g transform="translate(390 239)"><rect class="tile" width="135" height="78" rx="12"/><rect x="12" y="15" width="38" height="38" rx="10" fill="#302653"/><path class="ico v" d="M31 19 19 34l12 15 12-15Z"/><circle cx="31" cy="34" r="3" fill="#B49AFF"/><text class="nm" x="60" y="36">React / Next</text><text class="meta" x="60" y="51">FRONTEND</text></g>
+<g transform="translate(535 239)"><rect class="tile" width="135" height="78" rx="12"/><rect x="12" y="15" width="38" height="38" rx="10" fill="#263D35"/><path class="ico l" d="M20 24h22v20H20zM25 19v5m12-5v5m-12 20v5m12-5v5"/><text class="nm" x="60" y="36">Node.js</text><text class="meta" x="60" y="51">RUNTIME</text></g>
+<g transform="translate(680 239)"><rect class="tile" width="135" height="78" rx="12"/><rect x="12" y="15" width="38" height="38" rx="10" fill="#123D55"/><path class="ico a" d="M20 24h22v20H20zM25 30h12m-12 6h9"/><text class="nm" x="60" y="36">FastAPI</text><text class="meta" x="60" y="51">API SERVICES</text></g>
+<g transform="translate(825 239)"><rect class="tile" width="135" height="78" rx="12"/><rect x="12" y="15" width="38" height="38" rx="10" fill="#3C3525"/><path class="ico y" d="M20 26q11-10 22 0v17q-11 9-22 0Zm0 5q11 8 22 0m-22 7q11 8 22 0"/><text class="nm" x="60" y="36">MongoDB</text><text class="meta" x="60" y="51">DATABASE</text></g>
+<g transform="translate(970 239)"><rect class="tile" width="175" height="78" rx="12"/><rect x="12" y="15" width="38" height="38" rx="10" fill="#3C2639"/><circle class="ico c" cx="31" cy="34" r="12"/><path class="ico c" d="m24 34 5 5 10-12"/><text class="nm" x="60" y="36">Git &amp; GitHub</text><text class="meta" x="60" y="51">VERSION CONTROL</text></g>
 </g>
-
-<!-- HARDWARE & ENGINEERING -->
 <g class="float">
-  <g transform="translate(282 373)">
-    <rect class="tile" width="130" height="78" rx="12"/><rect class="icon-bg" x="12" y="13" width="34" height="34" rx="9"/>
-    <path class="icon-line" d="m21 22 16 16m0-16L21 38"/><path class="icon-line" d="M19 30h20"/>
-    <text class="name" x="55" y="35">C / C++</text><text class="hint" x="55" y="52">EMBEDDED CODE</text>
-  </g>
-  <g transform="translate(424 373)">
-    <rect class="tile" width="130" height="78" rx="12"/><rect class="icon-bg" x="12" y="13" width="34" height="34" rx="9"/>
-    <rect class="icon-line" x="21" y="21" width="16" height="18" rx="3"/><path class="icon-line" d="M24 17v4m5-4v4m5-4v4m-10 18v4m5-4v4m5-4v4"/>
-    <text class="name" x="55" y="35">ESP32</text><text class="hint" x="55" y="52">MICROCONTROLLER</text>
-  </g>
-  <g transform="translate(566 373)">
-    <rect class="tile" width="130" height="78" rx="12"/><rect class="icon-bg" x="12" y="13" width="34" height="34" rx="9"/>
-    <path class="icon-line" d="M21 22h16v16H21zM25 26h8v8h-8z"/><path class="icon-line" d="M18 26h3m-3 8h3m16-8h3m-3 8h3"/>
-    <text class="name" x="55" y="35">Arduino</text><text class="hint" x="55" y="52">PROTOTYPING</text>
-  </g>
-  <g transform="translate(708 373)">
-    <rect class="tile" width="130" height="78" rx="12"/><rect class="icon-bg" x="12" y="13" width="34" height="34" rx="9"/>
-    <path class="icon-line" d="M29 18v24m-10-12h20M22 22l14 16m0-16L22 38"/><circle class="icon-fill" cx="29" cy="30" r="3"/>
-    <text class="name" x="55" y="35">Pixhawk</text><text class="hint" x="55" y="52">FLIGHT CONTROL</text>
-  </g>
-  <g transform="translate(850 373)">
-    <rect class="tile" width="130" height="78" rx="12"/><rect class="icon-bg" x="12" y="13" width="34" height="34" rx="9"/>
-    <circle class="icon-line" cx="29" cy="30" r="4"/><circle class="icon-line" cx="29" cy="30" r="11"/><path class="icon-line" d="M29 19v-4m0 30v-4m11-11h4M14 30h4"/>
-    <text class="name" x="55" y="35">IoT</text><text class="hint" x="55" y="52">CONNECTED DEVICES</text>
-  </g>
-  <g transform="translate(992 373)">
-    <rect class="tile" width="150" height="78" rx="12"/><rect class="icon-bg" x="12" y="13" width="34" height="34" rx="9"/>
-    <g class="spin"><path class="icon-line" d="M29 30 19 21m10 9 10-9M29 30 19 39m10-9 10 9"/><circle class="icon-line" cx="19" cy="21" r="3"/><circle class="icon-line" cx="39" cy="21" r="3"/><circle class="icon-line" cx="19" cy="39" r="3"/><circle class="icon-line" cx="39" cy="39" r="3"/></g>
-    <circle class="icon-fill" cx="29" cy="30" r="3"/>
-    <text class="name" x="55" y="35">UAV Systems</text><text class="hint" x="55" y="52">AUTONOMY &amp; FLIGHT</text>
-  </g>
+<g transform="translate(245 361)"><rect class="tile" width="135" height="78" rx="12"/><rect x="12" y="15" width="38" height="38" rx="10" fill="#3C3525"/><path class="ico y" d="m21 24 20 20m0-20L21 44m-3-10h26"/><text class="nm" x="60" y="36">C / C++</text><text class="meta" x="60" y="51">EMBEDDED CODE</text></g>
+<g transform="translate(390 361)"><rect class="tile" width="135" height="78" rx="12"/><rect x="12" y="15" width="38" height="38" rx="10" fill="#123D55"/><rect class="ico a" x="21" y="24" width="20" height="20" rx="4"/><path class="ico a" d="M25 19v5m6-5v5m6-5v5m-12 20v5m6-5v5m6-5v5"/><text class="nm" x="60" y="36">ESP32</text><text class="meta" x="60" y="51">MICROCONTROLLER</text></g>
+<g transform="translate(535 361)"><rect class="tile" width="135" height="78" rx="12"/><rect x="12" y="15" width="38" height="38" rx="10" fill="#263D35"/><path class="ico l" d="M21 24h20v20H21zM25 28h12v12H25z"/><text class="nm" x="60" y="36">Arduino</text><text class="meta" x="60" y="51">PROTOTYPING</text></g>
+<g transform="translate(680 361)"><rect class="tile" width="135" height="78" rx="12"/><rect x="12" y="15" width="38" height="38" rx="10" fill="#302653"/><path class="ico v" d="M31 20v28m-12-14h24m-20-9 16 18m0-18L23 43"/><circle cx="31" cy="34" r="3" fill="#B49AFF"/><text class="nm" x="60" y="36">Pixhawk</text><text class="meta" x="60" y="51">FLIGHT CONTROL</text></g>
+<g transform="translate(825 361)"><rect class="tile" width="135" height="78" rx="12"/><rect x="12" y="15" width="38" height="38" rx="10" fill="#263D35"/><circle class="ico l" cx="31" cy="34" r="12"/><circle class="ico l" cx="31" cy="34" r="4"/><path class="ico l" d="M31 17v5m0 24v5m-17-17h5m24 0h5"/><text class="nm" x="60" y="36">IoT</text><text class="meta" x="60" y="51">CONNECTED DEVICES</text></g>
+<g transform="translate(970 361)"><rect class="tile" width="175" height="78" rx="12"/><rect x="12" y="15" width="38" height="38" rx="10" fill="#3C2639"/><g class="spin ico c"><path d="M31 34 20 23m11 11 11-11M31 34 20 45m11-11 11 11"/><circle cx="20" cy="23" r="4"/><circle cx="42" cy="23" r="4"/><circle cx="20" cy="45" r="4"/><circle cx="42" cy="45" r="4"/></g><text class="nm" x="60" y="36">UAV Systems</text><text class="meta" x="60" y="51">FLIGHT &amp; AUTONOMY</text></g>
 </g>
-
-<g opacity=".85">
-  <path d="M48 484H1152" stroke="#2D7565" stroke-opacity=".6"/>
-  <text x="48" y="499" class="hint">AI  •  SOFTWARE  •  EMBEDDED  •  AUTONOMOUS SYSTEMS</text>
-  <g class="spark" fill="#79E8C6"><circle cx="1136" cy="493" r="2.5"/><circle cx="1148" cy="493" r="2.5"/></g>
-</g>
-<rect x="1" y="1" width="1198" height="508" rx="25" fill="none" stroke="#72E0C1" stroke-opacity=".4"/>
+<path d="M42 477H1158" stroke="url(#line)" opacity=".55"/><text x="42" y="496" class="meta">BUILD  /  EXPERIMENT  /  INTEGRATE  /  ITERATE</text><text x="1158" y="496" text-anchor="end" class="meta">AURORA CIRCUIT • MILLU</text>
+<rect x="1" y="1" width="1198" height="508" rx="24" fill="none" stroke="#6879B6" stroke-opacity=".6"/>
 </svg>
