@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="230" viewBox="0 0 1100 230" role="img" aria-labelledby="title">
+<title id="title">Engineering domains: artificial intelligence, robotics, embedded systems, and UAVs</title>
+<rect width="1100" height="230" rx="20" fill="#071A18" stroke="#2D7565"/>
+<g font-family="Segoe UI,Arial,sans-serif" text-anchor="middle">
+ <g fill="#0E302A" stroke="#2D7565" stroke-width="1.5">
+  <rect x="24" y="28" width="250" height="174" rx="15"/><rect x="290" y="28" width="250" height="174" rx="15"/><rect x="556" y="28" width="250" height="174" rx="15"/><rect x="822" y="28" width="254" height="174" rx="15"/>
+ </g>
+ <g fill="none" stroke="#72E0C1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M124 78h50v38h-50zM136 66v12m26-12v12m-26 38v12m26-12v12M112 90h12m50 0h12M112 104h12m50 0h12"/>
+  <circle cx="415" cy="91" r="23"/><path d="M415 68v-17m-23 40h-23m69 0h23m-46 23v17M398 132l-15 14m49-14 15 14"/>
+  <rect x="650" y="68" width="62" height="50" rx="6"/><path d="M661 58v10m20-10v10m20-10v10m-40 60v10m20-10v10m20-10v10m-42-42h42"/>
+  <path d="M949 91l-45-30m45 30 45-30m-45 30-45 30m45-30 45 30"/><circle cx="949" cy="91" r="12"/><circle cx="898" cy="57" r="15"/><circle cx="1000" cy="57" r="15"/><circle cx="898" cy="125" r="15"/><circle cx="1000" cy="125" r="15"/>
+ </g>
+ <g fill="#72E0C1" font-size="19" font-weight="700">
+  <text x="149" y="164">ARTIFICIAL INTELLIGENCE</text><text x="415" y="164">ROBOTICS</text><text x="681" y="164">EMBEDDED &amp; IoT</text><text x="949" y="164">UAV SYSTEMS</text>
+ </g>
+ <g fill="#A8C9BF" font-size="12"><text x="149" y="184">Perception • Learning • Vision</text><text x="415" y="184">Control • Sensors • Motion</text><text x="681" y="184">Firmware • Connectivity</text><text x="949" y="184">Flight • Telemetry • Autonomy</text></g>
+</g>
+</svg>

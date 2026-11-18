@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="430" viewBox="0 0 1100 430" role="img" aria-labelledby="title">
+<title id="title">Millu's technology toolkit</title>
+<defs>
+ <linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#061614"/><stop offset="1" stop-color="#103B34"/></linearGradient>
+ <linearGradient id="a" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#72E0C1"/><stop offset="1" stop-color="#2AA98C"/></linearGradient>
+</defs>
+<rect width="1100" height="430" rx="22" fill="url(#b)"/>
+<g font-family="Segoe UI,Arial,sans-serif">
+ <text x="42" y="55" fill="#72E0C1" font-size="18" font-weight="700" letter-spacing="3">TECHNOLOGY TOOLKIT</text>
+ <text x="42" y="82" fill="#9ABDB3" font-size="13">Tools I use, learn, and apply across projects</text>
+ <g fill="#0E302A" stroke="#2D7565" stroke-width="1.4">
+  <rect x="38" y="112" width="1024" height="78" rx="14"/>
+  <rect x="38" y="207" width="1024" height="78" rx="14"/>
+  <rect x="38" y="302" width="1024" height="78" rx="14"/>
+ </g>
+ <g fill="#72E0C1" font-size="13" font-weight="700" letter-spacing="1.6">
+  <text x="58" y="137">AI &amp; DATA</text><text x="58" y="232">SOFTWARE &amp; BACKEND</text><text x="58" y="327">HARDWARE &amp; ENGINEERING</text>
+ </g>
+ <g fill="#E1F4EE" font-size="18" font-weight="600">
+  <text x="58" y="168">Python</text><text x="220" y="168">PyTorch</text><text x="390" y="168">OpenCV</text><text x="550" y="168">NumPy / Pandas</text><text x="790" y="168">Machine Learning</text>
+  <text x="58" y="263">TypeScript</text><text x="220" y="263">React / Next.js</text><text x="440" y="263">Node.js</text><text x="590" y="263">FastAPI</text><text x="735" y="263">MongoDB</text><text x="890" y="263">Git</text>
+  <text x="58" y="358">C / C++</text><text x="220" y="358">ESP32</text><text x="380" y="358">Arduino</text><text x="540" y="358">Pixhawk</text><text x="700" y="358">IoT</text><text x="830" y="358">UAV Systems</text>
+ </g>
+ <g fill="url(#a)">
+  <circle cx="190" cy="161" r="4"/><circle cx="355" cy="161" r="4"/><circle cx="520" cy="161" r="4"/><circle cx="760" cy="161" r="4"/>
+  <circle cx="195" cy="256" r="4"/><circle cx="415" cy="256" r="4"/><circle cx="565" cy="256" r="4"/><circle cx="710" cy="256" r="4"/><circle cx="870" cy="256" r="4"/>
+  <circle cx="195" cy="351" r="4"/><circle cx="355" cy="351" r="4"/><circle cx="515" cy="351" r="4"/><circle cx="675" cy="351" r="4"/><circle cx="805" cy="351" r="4"/>
+ </g>
+</g>
+<rect x="1" y="1" width="1098" height="428" rx="21" fill="none" stroke="#72E0C1" stroke-opacity=".35"/>
+</svg>
