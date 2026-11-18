@@ -5,6 +5,7 @@
 <br />
 
 <a href="https://github.com/its-millu"><img src="https://img.shields.io/badge/GitHub-its--millu-0D2422?style=for-the-badge&logo=github&logoColor=8DE8D2" alt="GitHub" /></a>
+<a href="https://github.com/its-millu?tab=repositories"><img src="https://img.shields.io/badge/Explore-My%20Repositories-0D2422?style=for-the-badge&logo=github&logoColor=8DE8D2" alt="Explore repositories" /></a>
 
 </div>
 
@@ -12,14 +13,14 @@
 
 ## About
 
-I'm **Millu**, a Data Science student and builder interested in the intersection of **Artificial Intelligence, Robotics, Embedded Systems, and UAV technology**.
+I'm **Millu**, a Data Science student and hands-on technology enthusiast exploring the intersection of **Artificial Intelligence, Robotics, Embedded Systems, and Unmanned Aerial Vehicles (UAVs)**.
 
-I enjoy turning ideas into practical systems — from software interfaces and data-driven applications to intelligent devices that interact with the physical world.
+I’m interested in building systems where software meets the physical world — combining intelligent algorithms, sensors, microcontrollers, communication links, and reliable hardware. My learning style is practical: build small, test carefully, understand the constraints, and improve through iteration.
 
-- **Focus:** AI + Robotics + UAV systems
-- **Interests:** Computer vision, machine learning, embedded development, IoT, telemetry, and autonomous systems
-- **Approach:** Learn by building, test on real constraints, document the process, and improve iteratively
-- **Currently exploring:** Reliable communication between software, sensors, microcontrollers, and intelligent applications
+- **Core direction:** AI · Robotics · Embedded Systems · UAVs
+- **Exploring:** Computer vision, machine learning, IoT, telemetry, and autonomous systems
+- **Building mindset:** Practical experimentation, measurable improvements, and documented learning
+- **Current curiosity:** Connecting software, sensors, and embedded devices into dependable intelligent systems
 
 ## Engineering domains
 
@@ -30,57 +31,26 @@ I enjoy turning ideas into practical systems — from software interfaces and da
 ## Technology toolkit
 
 <div align="center">
-  <img src="./assets/tech-stack.svg" alt="Millu's technology toolkit" width="100%" />
+  <img src="./assets/tech-stack.svg" alt="Millu's technology toolkit across AI, software, and hardware" width="100%" />
 </div>
 
-### Tools and technologies
+### Development environment
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=python,cpp,c,java,js,ts,react,nextjs,nodejs,fastapi,tailwind,mongodb,postgres,git,github,vscode&theme=dark" alt="Programming languages and development tools" />
 </p>
 
-> This is a working toolkit, not a claim of equal expertise across every technology. I add tools as I use them in projects.
-
-## Selected projects
-
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>Paperly AI</h3>
-      <p>An AI-powered personalized daily newspaper that curates relevant news, generates summaries, and creates downloadable newspaper-style PDFs.</p>
-      <p><strong>Focus:</strong> AI applications · Next.js</p>
-      <a href="https://github.com/its-millu/paperly-ai">View repository →</a>
-    </td>
-    <td width="50%" valign="top">
-      <h3>AH Interiors</h3>
-      <p>A web development project built with Next.js. The repository is a starting point for developing and iterating on an application interface.</p>
-      <p><strong>Focus:</strong> Web development · Next.js</p>
-      <a href="https://github.com/its-millu/ah-interiors">View repository →</a>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>Python Voice Bot</h3>
-      <p>A Python voice-bot learning project. Explore the repository for its current implementation and development history.</p>
-      <p><strong>Focus:</strong> Python · Voice interfaces</p>
-      <a href="https://github.com/its-millu/Python-Voice-Bot">View repository →</a>
-    </td>
-    <td width="50%" valign="top">
-      <h3>Analog Clock</h3>
-      <p>A focused front-end project exploring time-based UI rendering and a classic analog clock interface.</p>
-      <p><strong>Focus:</strong> JavaScript · Front-end fundamentals</p>
-      <a href="https://github.com/its-millu/Analog_Clock">View repository →</a>
-    </td>
-  </tr>
-</table>
+<blockquote>
+  <p>This toolkit reflects technologies I work with and explore. My experience varies by tool, and I’m continuously strengthening the fundamentals through practical work.</p>
+</blockquote>
 
 ## What I'm working toward
 
-- Building stronger foundations in embedded C/C++ and microcontroller programming
-- Connecting sensors, telemetry, and edge intelligence into useful IoT systems
-- Exploring computer vision and machine learning for real-world applications
-- Developing and testing UAV subsystems with a focus on safety and reliability
-- Sharing practical experiments, lessons, and reproducible project work
+- Strengthening embedded C/C++ and microcontroller programming fundamentals
+- Integrating sensors, telemetry, and edge intelligence into useful IoT systems
+- Applying computer vision and machine learning to real-world engineering problems
+- Learning UAV subsystem design, integration, and testing with safety and reliability in mind
+- Sharing experiments, technical notes, and reproducible builds as I learn
 
 ## GitHub activity
 
@@ -101,6 +71,6 @@ I enjoy turning ideas into practical systems — from software interfaces and da
 
 <a href="https://github.com/its-millu">GitHub</a> · Open to learning, collaboration, and practical engineering projects.
 
-<sub>Designed and written originally for Millu's GitHub profile. Visual assets in this repository are original SVG artwork.</sub>
+<sub>Original profile copy and SVG artwork created for Millu's GitHub profile.</sub>
 
 </div>
