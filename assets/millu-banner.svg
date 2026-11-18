@@ -1,34 +1,147 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
 <title id="title">Millu — AI, Robotics and UAV Systems</title>
-<desc id="desc">Original dark teal engineering banner with circuit paths and a geometric drone motif.</desc>
+<desc id="desc">Animated original dark teal engineering banner. A scanning beam, flowing circuit pulses, subtle HUD rings and a rotating quadcopter motif represent AI, robotics and UAV systems.</desc>
+
+<style>
+  .scan { animation: scanMove 6s ease-in-out infinite; }
+  .pulse { stroke-dasharray: 7 17; animation: circuitFlow 7s linear infinite; }
+  .pulse2 { stroke-dasharray: 3 22; animation: circuitFlow 10s linear infinite reverse; }
+  .node { transform-box: fill-box; transform-origin: center; animation: nodePulse 2.8s ease-in-out infinite; }
+  .node.delay1 { animation-delay: .7s; }
+  .node.delay2 { animation-delay: 1.4s; }
+  .ring { transform-box: fill-box; transform-origin: center; animation: ringPulse 4s ease-out infinite; }
+  .ring.delay { animation-delay: 2s; }
+  .drone-rotor { transform-box: fill-box; transform-origin: center; animation: rotor 1.8s linear infinite; }
+  .drone-rotor.r2 { animation-delay: -.45s; }
+  .drone-rotor.r3 { animation-delay: -.9s; }
+  .drone-rotor.r4 { animation-delay: -1.35s; }
+  .float { animation: float 5s ease-in-out infinite; }
+  .float.delay { animation-delay: -2.5s; }
+  .blink { animation: blink 1.8s steps(2, end) infinite; }
+  .glowText { animation: textGlow 3.5s ease-in-out infinite; }
+  @keyframes scanMove {
+    0%, 8% { transform: translateX(-300px); opacity: 0; }
+    18% { opacity: .55; }
+    78% { opacity: .38; }
+    92%, 100% { transform: translateX(1450px); opacity: 0; }
+  }
+  @keyframes circuitFlow { to { stroke-dashoffset: -192; } }
+  @keyframes nodePulse { 0%,100% { opacity:.55; transform:scale(.8); } 50% { opacity:1; transform:scale(1.45); } }
+  @keyframes ringPulse { 0% { opacity:.55; transform:scale(.7); } 100% { opacity:0; transform:scale(1.7); } }
+  @keyframes rotor { to { transform: rotate(360deg); } }
+  @keyframes float { 0%,100% { transform:translateY(0); } 50% { transform:translateY(-7px); } }
+  @keyframes blink { 0%,48% { opacity:1; } 49%,100% { opacity:.25; } }
+  @keyframes textGlow { 0%,100% { opacity:.82; } 50% { opacity:1; } }
+  @media (prefers-reduced-motion: reduce) {
+    .scan,.pulse,.pulse2,.node,.ring,.drone-rotor,.float,.blink,.glowText { animation:none !important; }
+  }
+</style>
+
 <defs>
-  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#061614"/><stop offset=".55" stop-color="#0B2925"/><stop offset="1" stop-color="#103B34"/></linearGradient>
-  <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#72E0C1"/><stop offset="1" stop-color="#27A88C"/></linearGradient>
-  <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#72E0C1" stroke-opacity=".08"/></pattern>
-  <filter id="blur"><feGaussianBlur stdDeviation="22"/></filter>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#061512"/><stop offset=".54" stop-color="#0A2823"/><stop offset="1" stop-color="#103B33"/>
+  </linearGradient>
+  <linearGradient id="mint" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#B0F7DE"/><stop offset=".5" stop-color="#72E0C1"/><stop offset="1" stop-color="#24A98A"/>
+  </linearGradient>
+  <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
+    <stop stop-color="#72E0C1" stop-opacity="0"/><stop offset=".5" stop-color="#A5F5D9" stop-opacity=".8"/><stop offset="1" stop-color="#72E0C1" stop-opacity="0"/>
+  </linearGradient>
+  <radialGradient id="orb">
+    <stop stop-color="#50D7B2" stop-opacity=".24"/><stop offset="1" stop-color="#50D7B2" stop-opacity="0"/>
+  </radialGradient>
+  <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+    <path d="M32 0H0V32" fill="none" stroke="#8BE8CC" stroke-opacity=".065" stroke-width="1"/>
+    <circle cx="0" cy="0" r="1.2" fill="#72E0C1" fill-opacity=".15"/>
+  </pattern>
+  <filter id="blur"><feGaussianBlur stdDeviation="24"/></filter>
+  <filter id="softGlow" x="-80%" y="-80%" width="260%" height="260%">
+    <feGaussianBlur stdDeviation="4" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <clipPath id="clip"><rect width="1200" height="360" rx="24"/></clipPath>
 </defs>
-<rect width="1200" height="360" rx="24" fill="url(#bg)"/>
-<rect width="1200" height="360" rx="24" fill="url(#grid)"/>
-<circle cx="970" cy="170" r="150" fill="#2AB391" opacity=".12" filter="url(#blur)"/>
-<g fill="none" stroke="#72E0C1" stroke-opacity=".38" stroke-width="2">
- <path d="M0 70H170L205 105H350M0 290H130L165 255H330M820 0V58L860 98H1200M900 360V300L950 250H1200"/>
- <path d="M55 180H245L280 145H410M1040 40V95L1080 135H1200"/>
+
+<g clip-path="url(#clip)">
+  <rect width="1200" height="360" fill="url(#bg)"/>
+  <rect width="1200" height="360" fill="url(#grid)"/>
+  <circle cx="970" cy="170" r="190" fill="url(#orb)" filter="url(#blur)"/>
+  <circle cx="190" cy="40" r="150" fill="url(#orb)" filter="url(#blur)"/>
+
+  <!-- Circuit traces -->
+  <g fill="none" stroke="#72E0C1" stroke-opacity=".28" stroke-width="1.7">
+    <path d="M0 70H170L205 105H350M0 290H130L165 255H330M820 0V58L860 98H1200M900 360V300L950 250H1200"/>
+    <path d="M55 180H245L280 145H410M1040 40V95L1080 135H1200"/>
+  </g>
+  <g fill="none" stroke="url(#mint)" stroke-width="2.2" class="pulse">
+    <path d="M0 70H170L205 105H350M0 290H130L165 255H330M820 0V58L860 98H1200"/>
+  </g>
+  <g fill="none" stroke="#A4F4D8" stroke-width="1.5" class="pulse2">
+    <path d="M55 180H245L280 145H410M1040 40V95L1080 135H1200M900 360V300L950 250H1200"/>
+  </g>
+  <g fill="#72E0C1">
+    <circle class="node" cx="170" cy="70" r="3.5"/>
+    <circle class="node delay1" cx="350" cy="105" r="3.5"/>
+    <circle class="node delay2" cx="130" cy="290" r="3.5"/>
+    <circle class="node" cx="330" cy="255" r="3.5"/>
+    <circle class="node delay1" cx="860" cy="98" r="3.5"/>
+    <circle class="node delay2" cx="950" cy="250" r="3.5"/>
+  </g>
+
+  <!-- Soft scanning beam -->
+  <g class="scan">
+    <rect x="-100" y="0" width="150" height="360" fill="url(#beam)" opacity=".5"/>
+    <path d="M0 0V360" stroke="#A5F5D9" stroke-width="1.5" opacity=".55" filter="url(#softGlow)"/>
+  </g>
+
+  <!-- Left-side identity -->
+  <g font-family="Inter,Segoe UI,Arial,sans-serif">
+    <text x="76" y="106" fill="#8FEBD0" font-size="15" font-weight="700" letter-spacing="4">ENGINEERING • INTELLIGENCE • AUTONOMY</text>
+    <text x="72" y="205" fill="#F0FAF7" font-size="82" font-weight="800" letter-spacing="-3" class="glowText">MILLU</text>
+    <rect x="77" y="226" width="310" height="2" rx="1" fill="url(#mint)" opacity=".75"/>
+    <text x="78" y="263" fill="#C2E4DA" font-size="22" font-weight="650" letter-spacing="1.8">AI  /  ROBOTICS  /  UAV SYSTEMS</text>
+    <text x="78" y="302" fill="#83B6A8" font-size="16">Building intelligent systems from code to the physical world.</text>
+    <g transform="translate(78 330)">
+      <circle cx="4" cy="0" r="4" fill="#72E0C1" class="blink"/>
+      <text x="17" y="4" fill="#72E0C1" font-size="10" font-weight="700" letter-spacing="2.1">SYSTEMS THINKING  ·  HANDS-ON BUILDING</text>
+    </g>
+  </g>
+
+  <!-- Quadcopter HUD -->
+  <g class="float">
+    <circle cx="890" cy="177" r="135" fill="none" stroke="#72E0C1" stroke-opacity=".16" stroke-dasharray="2 10"/>
+    <circle class="ring" cx="890" cy="177" r="105" fill="none" stroke="#72E0C1" stroke-width="1.5"/>
+    <circle class="ring delay" cx="890" cy="177" r="105" fill="none" stroke="#72E0C1" stroke-width="1.5"/>
+    <path d="M890 39V63M890 291V315M752 177H776M1004 177H1028" stroke="#72E0C1" stroke-opacity=".5" stroke-width="2"/>
+    <g transform="translate(890 177)" stroke="url(#mint)" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M-105 0L-36 -28L0 0L36 -28L105 0M-36 -28L-72 -82M36 -28L72 -82M-36 -28L-72 82M36 -28L72 82"/>
+      <path d="M-16 -12L0 -24L16 -12L16 12L0 24L-16 12Z" fill="#0A2722"/>
+      <g fill="#0A2722">
+        <circle cx="-80" cy="-88" r="22"/><circle cx="80" cy="-88" r="22"/>
+        <circle cx="-80" cy="88" r="22"/><circle cx="80" cy="88" r="22"/>
+      </g>
+      <g stroke-width="2.2">
+        <g class="drone-rotor"><path d="M-96 -88H-64M-80 -104V-72"/></g>
+        <g class="drone-rotor r2"><path d="M64 -88H96M80 -104V-72"/></g>
+        <g class="drone-rotor r3"><path d="M-96 88H-64M-80 72V104"/></g>
+        <g class="drone-rotor r4"><path d="M64 88H96M80 72V104"/></g>
+      </g>
+      <circle r="5" fill="#F3A66F" stroke="none" filter="url(#softGlow)"/>
+    </g>
+    <g font-family="Consolas,monospace" font-size="10" fill="#8FEBD0">
+      <text x="890" y="67" text-anchor="middle" letter-spacing="2">UAV / FLIGHT SYSTEM</text>
+      <text x="890" y="304" text-anchor="middle" fill="#6FAE9D">TELEMETRY  ·  CONTROL  ·  VISION</text>
+    </g>
+  </g>
+
+  <!-- Tiny floating telemetry points -->
+  <g fill="#A5F5D9" filter="url(#softGlow)">
+    <circle class="node delay2" cx="720" cy="86" r="2"/>
+    <circle class="node" cx="1080" cy="95" r="2"/>
+    <circle class="node delay1" cx="1090" cy="280" r="2"/>
+    <circle class="node delay2" cx="690" cy="265" r="2"/>
+  </g>
 </g>
-<g fill="#72E0C1">
- <circle cx="170" cy="70" r="4"/><circle cx="350" cy="105" r="4"/><circle cx="130" cy="290" r="4"/><circle cx="330" cy="255" r="4"/><circle cx="860" cy="98" r="4"/><circle cx="950" cy="250" r="4"/>
-</g>
-<g transform="translate(890 178)" stroke="url(#glow)" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
- <path d="M-105 0L-36 -28L0 0L36 -28L105 0M-36 -28L-72 -82M36 -28L72 -82M-36 -28L-72 82M36 -28L72 82"/>
- <path d="M-16 -12L0 -24L16 -12L16 12L0 24L-16 12Z" fill="#0A2722"/>
- <circle cx="-80" cy="-88" r="22" fill="#0A2722"/><circle cx="80" cy="-88" r="22" fill="#0A2722"/><circle cx="-80" cy="88" r="22" fill="#0A2722"/><circle cx="80" cy="88" r="22" fill="#0A2722"/>
- <path d="M-94 -88H-66M-80 -102V-74M66 -88H94M80 -102V-74M-94 88H-66M-80 74V102M66 88H94M80 74V102" stroke-width="2"/>
- <circle r="5" fill="#F4A261" stroke="none"/>
-</g>
-<g font-family="Segoe UI,Arial,sans-serif">
- <text x="76" y="112" fill="#72E0C1" font-size="17" font-weight="700" letter-spacing="5">ENGINEERING • INTELLIGENCE • AUTONOMY</text>
- <text x="72" y="202" fill="#F0FAF7" font-size="76" font-weight="800" letter-spacing="-2">MILLU</text>
- <text x="78" y="246" fill="#B7D7CE" font-size="23" font-weight="600" letter-spacing="2">AI  /  ROBOTICS  /  UAV SYSTEMS</text>
- <text x="78" y="294" fill="#83B6A8" font-size="16">Building intelligent systems from code to the physical world.</text>
-</g>
-<rect x="1" y="1" width="1198" height="358" rx="23" fill="none" stroke="#72E0C1" stroke-opacity=".3" stroke-width="2"/>
+
+<rect x="1" y="1" width="1198" height="358" rx="23" fill="none" stroke="#72E0C1" stroke-opacity=".34" stroke-width="2"/>
 </svg>

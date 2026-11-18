@@ -1,31 +1,198 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="430" viewBox="0 0 1100 430" role="img" aria-labelledby="title">
-<title id="title">Millu's technology toolkit</title>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="510" viewBox="0 0 1200 510" role="img" aria-labelledby="title desc">
+<title id="title">Millu's technology stack</title>
+<desc id="desc">A premium animated technology toolkit covering AI and data, software and backend, and hardware and engineering.</desc>
 <defs>
- <linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#061614"/><stop offset="1" stop-color="#103B34"/></linearGradient>
- <linearGradient id="a" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#72E0C1"/><stop offset="1" stop-color="#2AA98C"/></linearGradient>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#061512"/><stop offset=".55" stop-color="#0A2823"/><stop offset="1" stop-color="#102F2A"/>
+  </linearGradient>
+  <linearGradient id="mint" x1="0" y1="0" x2="1" y2="0">
+    <stop stop-color="#A1FFE1"/><stop offset=".5" stop-color="#52D9B4"/><stop offset="1" stop-color="#24A98A"/>
+  </linearGradient>
+  <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+    <stop stop-color="#123B33" stop-opacity=".94"/><stop offset="1" stop-color="#0A211D" stop-opacity=".96"/>
+  </linearGradient>
+  <linearGradient id="sweep" x1="0" y1="0" x2="1" y2="0">
+    <stop stop-color="#6FFFD0" stop-opacity="0"/><stop offset=".5" stop-color="#6FFFD0" stop-opacity=".18"/><stop offset="1" stop-color="#6FFFD0" stop-opacity="0"/>
+  </linearGradient>
+  <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur stdDeviation="3" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+    <feGaussianBlur stdDeviation="13"/>
+  </filter>
+  <style>
+    text{font-family:Inter,Segoe UI,Arial,sans-serif}
+    .eyebrow{font-size:14px;font-weight:800;letter-spacing:3.2px;fill:#79E8C6}
+    .sub{font-size:13px;fill:#9ABDB3;letter-spacing:.25px}
+    .group{font-size:12px;font-weight:800;letter-spacing:1.7px;fill:#7FE7C7}
+    .name{font-size:15px;font-weight:650;fill:#E7F8F1}
+    .hint{font-size:10px;letter-spacing:1.4px;fill:#719B8F}
+    .panel{fill:url(#panel);stroke:#286A5B;stroke-width:1.2}
+    .tile{fill:#0D3029;stroke:#286B5B;stroke-width:1}
+    .icon-bg{fill:#17483D;stroke:#4BBA99;stroke-opacity:.55;stroke-width:1}
+    .icon-line{fill:none;stroke:#9BFFE0;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+    .icon-fill{fill:#82EAC8}
+    .pulse{animation:pulse 2.8s ease-in-out infinite}
+    .float{animation:float 4.5s ease-in-out infinite}
+    .scan{animation:scan 8s ease-in-out infinite}
+    .spark{animation:spark 2.2s ease-in-out infinite}
+    .spin{transform-box:fill-box;transform-origin:center;animation:spin 9s linear infinite}
+    @keyframes pulse{0%,100%{opacity:.55}50%{opacity:1}}
+    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-2px)}}
+    @keyframes scan{0%{transform:translateX(-1250px)}55%,100%{transform:translateX(1250px)}}
+    @keyframes spark{0%,100%{opacity:.25}50%{opacity:1}}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    @media(prefers-reduced-motion:reduce){.pulse,.float,.scan,.spark,.spin{animation:none}}
+  </style>
 </defs>
-<rect width="1100" height="430" rx="22" fill="url(#b)"/>
-<g font-family="Segoe UI,Arial,sans-serif">
- <text x="42" y="55" fill="#72E0C1" font-size="18" font-weight="700" letter-spacing="3">TECHNOLOGY TOOLKIT</text>
- <text x="42" y="82" fill="#9ABDB3" font-size="13">Tools I use, learn, and apply across projects</text>
- <g fill="#0E302A" stroke="#2D7565" stroke-width="1.4">
-  <rect x="38" y="112" width="1024" height="78" rx="14"/>
-  <rect x="38" y="207" width="1024" height="78" rx="14"/>
-  <rect x="38" y="302" width="1024" height="78" rx="14"/>
- </g>
- <g fill="#72E0C1" font-size="13" font-weight="700" letter-spacing="1.6">
-  <text x="58" y="137">AI &amp; DATA</text><text x="58" y="232">SOFTWARE &amp; BACKEND</text><text x="58" y="327">HARDWARE &amp; ENGINEERING</text>
- </g>
- <g fill="#E1F4EE" font-size="18" font-weight="600">
-  <text x="58" y="168">Python</text><text x="220" y="168">PyTorch</text><text x="390" y="168">OpenCV</text><text x="550" y="168">NumPy / Pandas</text><text x="790" y="168">Machine Learning</text>
-  <text x="58" y="263">TypeScript</text><text x="220" y="263">React / Next.js</text><text x="440" y="263">Node.js</text><text x="590" y="263">FastAPI</text><text x="735" y="263">MongoDB</text><text x="890" y="263">Git</text>
-  <text x="58" y="358">C / C++</text><text x="220" y="358">ESP32</text><text x="380" y="358">Arduino</text><text x="540" y="358">Pixhawk</text><text x="700" y="358">IoT</text><text x="830" y="358">UAV Systems</text>
- </g>
- <g fill="url(#a)">
-  <circle cx="190" cy="161" r="4"/><circle cx="355" cy="161" r="4"/><circle cx="520" cy="161" r="4"/><circle cx="760" cy="161" r="4"/>
-  <circle cx="195" cy="256" r="4"/><circle cx="415" cy="256" r="4"/><circle cx="565" cy="256" r="4"/><circle cx="710" cy="256" r="4"/><circle cx="870" cy="256" r="4"/>
-  <circle cx="195" cy="351" r="4"/><circle cx="355" cy="351" r="4"/><circle cx="515" cy="351" r="4"/><circle cx="675" cy="351" r="4"/><circle cx="805" cy="351" r="4"/>
- </g>
+
+<rect width="1200" height="510" rx="26" fill="url(#bg)"/>
+<circle cx="1090" cy="65" r="120" fill="#28B894" opacity=".08" filter="url(#soft)"/>
+<circle cx="80" cy="460" r="130" fill="#28B894" opacity=".06" filter="url(#soft)"/>
+<g opacity=".12" stroke="#62DDB9" fill="none">
+  <path d="M0 92H1200M0 490H1200M28 0V510M1172 0V510"/>
+  <path d="M20 112h22m-11-11v22M1158 112h22m-11-11v22M20 474h22m-11-11v22M1158 474h22m-11-11v22"/>
 </g>
-<rect x="1" y="1" width="1098" height="428" rx="21" fill="none" stroke="#72E0C1" stroke-opacity=".35"/>
+
+<g>
+  <text x="48" y="54" class="eyebrow">ENGINEERING TOOLKIT <tspan fill="#D8FFF2">/</tspan> 2026</text>
+  <text x="48" y="82" class="sub">Technologies I build with, experiment on, and keep sharpening.</text>
+  <g transform="translate(1000 42)">
+    <circle cx="0" cy="0" r="4" fill="#68F2BE" class="pulse" filter="url(#glow)"/>
+    <text x="13" y="4" class="hint">SYSTEMS ONLINE</text>
+  </g>
+</g>
+
+<!-- Category panels -->
+<g>
+  <rect class="panel" x="38" y="112" width="1124" height="108" rx="17"/>
+  <rect class="panel" x="38" y="235" width="1124" height="108" rx="17"/>
+  <rect class="panel" x="38" y="358" width="1124" height="108" rx="17"/>
+  <path d="M55 113h180" stroke="url(#mint)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M55 236h180" stroke="url(#mint)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M55 359h180" stroke="url(#mint)" stroke-width="3" stroke-linecap="round"/>
+</g>
+<g class="scan"><rect x="0" y="112" width="210" height="354" fill="url(#sweep)"/></g>
+
+<!-- category labels -->
+<g>
+  <text x="58" y="140" class="group">01 / AI &amp; DATA</text>
+  <text x="58" y="263" class="group">02 / SOFTWARE &amp; BACKEND</text>
+  <text x="58" y="386" class="group">03 / HARDWARE &amp; ENGINEERING</text>
+  <text x="58" y="202" class="hint">INTELLIGENCE</text>
+  <text x="58" y="325" class="hint">APPLICATIONS</text>
+  <text x="58" y="448" class="hint">REAL-WORLD SYSTEMS</text>
+</g>
+
+<!-- reusable-looking icon tiles; each has an original mini mark -->
+<!-- AI & DATA -->
+<g class="float">
+  <g transform="translate(282 127)">
+    <rect class="tile" width="130" height="78" rx="12"/><rect class="icon-bg" x="12" y="13" width="34" height="34" rx="9"/>
+    <path class="icon-line" d="M21 31c-5-5 1-11 8-8 5-4 12 1 8 7 4 6-2 11-8 8-6 4-12-1-8-7Z"/>
+    <path class="icon-line" d="M27 22v17m-5-9h14"/>
+    <text class="name" x="55" y="35">Python</text><text class="hint" x="55" y="52">LANGUAGE</text>
+  </g>
+  <g transform="translate(424 127)">
+    <rect class="tile" width="130" height="78" rx="12"/><rect class="icon-bg" x="12" y="13" width="34" height="34" rx="9"/>
+    <path class="icon-line" d="M29 18 19 36h8l-2 8 11-18h-8l1-8Z"/>
+    <text class="name" x="55" y="35">PyTorch</text><text class="hint" x="55" y="52">DEEP LEARNING</text>
+  </g>
+  <g transform="translate(566 127)">
+    <rect class="tile" width="130" height="78" rx="12"/><rect class="icon-bg" x="12" y="13" width="34" height="34" rx="9"/>
+    <circle class="icon-line" cx="29" cy="30" r="10"/><circle class="icon-line" cx="29" cy="30" r="4"/><path class="icon-line" d="M29 16v4m0 20v4m-13-14h4m18 0h4"/>
+    <text class="name" x="55" y="35">OpenCV</text><text class="hint" x="55" y="52">COMPUTER VISION</text>
+  </g>
+  <g transform="translate(708 127)">
+    <rect class="tile" width="130" height="78" rx="12"/><rect class="icon-bg" x="12" y="13" width="34" height="34" rx="9"/>
+    <path class="icon-line" d="M19 22h20M19 29h20M19 36h20"/><circle class="icon-fill" cx="23" cy="22" r="2"/><circle class="icon-fill" cx="34" cy="29" r="2"/><circle class="icon-fill" cx="27" cy="36" r="2"/>
+    <text class="name" x="55" y="35">NumPy</text><text class="hint" x="55" y="52">NUMERICAL</text>
+  </g>
+  <g transform="translate(850 127)">
+    <rect class="tile" width="130" height="78" rx="12"/><rect class="icon-bg" x="12" y="13" width="34" height="34" rx="9"/>
+    <path class="icon-line" d="M19 38V22h20v16M23 34l4-5 4 3 5-7"/><circle class="icon-fill" cx="36" cy="25" r="2"/>
+    <text class="name" x="55" y="35">Pandas</text><text class="hint" x="55" y="52">DATA ANALYSIS</text>
+  </g>
+  <g transform="translate(992 127)">
+    <rect class="tile" width="150" height="78" rx="12"/><rect class="icon-bg" x="12" y="13" width="34" height="34" rx="9"/>
+    <path class="icon-line" d="M19 38V20h20v18M23 34l4-5 4 2 5-7"/><path class="icon-line" d="M24 24h10"/>
+    <text class="name" x="55" y="35">ML</text><text class="hint" x="55" y="52">MODELS &amp; AI</text>
+  </g>
+</g>
+
+<!-- SOFTWARE & BACKEND -->
+<g class="float">
+  <g transform="translate(282 250)">
+    <rect class="tile" width="130" height="78" rx="12"/><rect class="icon-bg" x="12" y="13" width="34" height="34" rx="9"/>
+    <path class="icon-line" d="m25 21-7 9 7 9m8-18 7 9-7 9"/>
+    <text class="name" x="55" y="35">TypeScript</text><text class="hint" x="55" y="52">TYPED JS</text>
+  </g>
+  <g transform="translate(424 250)">
+    <rect class="tile" width="130" height="78" rx="12"/><rect class="icon-bg" x="12" y="13" width="34" height="34" rx="9"/>
+    <path class="icon-line" d="M29 18 19 30l10 12 10-12-10-12Z"/><circle class="icon-fill" cx="29" cy="30" r="3"/>
+    <text class="name" x="55" y="35">React / Next</text><text class="hint" x="55" y="52">FRONTEND</text>
+  </g>
+  <g transform="translate(566 250)">
+    <rect class="tile" width="130" height="78" rx="12"/><rect class="icon-bg" x="12" y="13" width="34" height="34" rx="9"/>
+    <path class="icon-line" d="M20 22h18v16H20zM24 18v4m10-4v4m-10 20v-4m10 4v-4"/>
+    <text class="name" x="55" y="35">Node.js</text><text class="hint" x="55" y="52">RUNTIME</text>
+  </g>
+  <g transform="translate(708 250)">
+    <rect class="tile" width="130" height="78" rx="12"/><rect class="icon-bg" x="12" y="13" width="34" height="34" rx="9"/>
+    <path class="icon-line" d="M19 22h20v16H19zM24 27h10m-10 5h7"/><path class="icon-line" d="m24 18-4 4m14-4 4 4"/>
+    <text class="name" x="55" y="35">FastAPI</text><text class="hint" x="55" y="52">API SERVICES</text>
+  </g>
+  <g transform="translate(850 250)">
+    <rect class="tile" width="130" height="78" rx="12"/><rect class="icon-bg" x="12" y="13" width="34" height="34" rx="9"/>
+    <path class="icon-line" d="M19 23q10-9 20 0v14q-10 9-20 0Z"/><path class="icon-line" d="M19 27q10 8 20 0M19 33q10 8 20 0"/>
+    <text class="name" x="55" y="35">MongoDB</text><text class="hint" x="55" y="52">DATABASE</text>
+  </g>
+  <g transform="translate(992 250)">
+    <rect class="tile" width="150" height="78" rx="12"/><rect class="icon-bg" x="12" y="13" width="34" height="34" rx="9"/>
+    <circle class="icon-line" cx="29" cy="30" r="11"/><path class="icon-line" d="m23 30 4 4 8-9"/>
+    <text class="name" x="55" y="35">Git</text><text class="hint" x="55" y="52">VERSION CONTROL</text>
+  </g>
+</g>
+
+<!-- HARDWARE & ENGINEERING -->
+<g class="float">
+  <g transform="translate(282 373)">
+    <rect class="tile" width="130" height="78" rx="12"/><rect class="icon-bg" x="12" y="13" width="34" height="34" rx="9"/>
+    <path class="icon-line" d="m21 22 16 16m0-16L21 38"/><path class="icon-line" d="M19 30h20"/>
+    <text class="name" x="55" y="35">C / C++</text><text class="hint" x="55" y="52">EMBEDDED CODE</text>
+  </g>
+  <g transform="translate(424 373)">
+    <rect class="tile" width="130" height="78" rx="12"/><rect class="icon-bg" x="12" y="13" width="34" height="34" rx="9"/>
+    <rect class="icon-line" x="21" y="21" width="16" height="18" rx="3"/><path class="icon-line" d="M24 17v4m5-4v4m5-4v4m-10 18v4m5-4v4m5-4v4"/>
+    <text class="name" x="55" y="35">ESP32</text><text class="hint" x="55" y="52">MICROCONTROLLER</text>
+  </g>
+  <g transform="translate(566 373)">
+    <rect class="tile" width="130" height="78" rx="12"/><rect class="icon-bg" x="12" y="13" width="34" height="34" rx="9"/>
+    <path class="icon-line" d="M21 22h16v16H21zM25 26h8v8h-8z"/><path class="icon-line" d="M18 26h3m-3 8h3m16-8h3m-3 8h3"/>
+    <text class="name" x="55" y="35">Arduino</text><text class="hint" x="55" y="52">PROTOTYPING</text>
+  </g>
+  <g transform="translate(708 373)">
+    <rect class="tile" width="130" height="78" rx="12"/><rect class="icon-bg" x="12" y="13" width="34" height="34" rx="9"/>
+    <path class="icon-line" d="M29 18v24m-10-12h20M22 22l14 16m0-16L22 38"/><circle class="icon-fill" cx="29" cy="30" r="3"/>
+    <text class="name" x="55" y="35">Pixhawk</text><text class="hint" x="55" y="52">FLIGHT CONTROL</text>
+  </g>
+  <g transform="translate(850 373)">
+    <rect class="tile" width="130" height="78" rx="12"/><rect class="icon-bg" x="12" y="13" width="34" height="34" rx="9"/>
+    <circle class="icon-line" cx="29" cy="30" r="4"/><circle class="icon-line" cx="29" cy="30" r="11"/><path class="icon-line" d="M29 19v-4m0 30v-4m11-11h4M14 30h4"/>
+    <text class="name" x="55" y="35">IoT</text><text class="hint" x="55" y="52">CONNECTED DEVICES</text>
+  </g>
+  <g transform="translate(992 373)">
+    <rect class="tile" width="150" height="78" rx="12"/><rect class="icon-bg" x="12" y="13" width="34" height="34" rx="9"/>
+    <g class="spin"><path class="icon-line" d="M29 30 19 21m10 9 10-9M29 30 19 39m10-9 10 9"/><circle class="icon-line" cx="19" cy="21" r="3"/><circle class="icon-line" cx="39" cy="21" r="3"/><circle class="icon-line" cx="19" cy="39" r="3"/><circle class="icon-line" cx="39" cy="39" r="3"/></g>
+    <circle class="icon-fill" cx="29" cy="30" r="3"/>
+    <text class="name" x="55" y="35">UAV Systems</text><text class="hint" x="55" y="52">AUTONOMY &amp; FLIGHT</text>
+  </g>
+</g>
+
+<g opacity=".85">
+  <path d="M48 484H1152" stroke="#2D7565" stroke-opacity=".6"/>
+  <text x="48" y="499" class="hint">AI  •  SOFTWARE  •  EMBEDDED  •  AUTONOMOUS SYSTEMS</text>
+  <g class="spark" fill="#79E8C6"><circle cx="1136" cy="493" r="2.5"/><circle cx="1148" cy="493" r="2.5"/></g>
+</g>
+<rect x="1" y="1" width="1198" height="508" rx="25" fill="none" stroke="#72E0C1" stroke-opacity=".4"/>
 </svg>
